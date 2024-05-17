@@ -1,0 +1,17 @@
+:root{
+    --white: #ffffff;
+    --black:#000;
+    --blue:#4071f4;
+    --blackBg:#232323;
+    --orange:#e1684d;
+}
+
+body{
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#designation{
+    color: var(--blue);
+    font-size: 29px;
+}
