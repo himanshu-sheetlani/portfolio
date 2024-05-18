@@ -76,13 +76,11 @@ body{
 #name{
     color: var(--black);
     font-size: 47px;
-    /* margin: 10px 0; */
 }
 
 #hello{
     color: var(--black);
     font-size: 29px;
-    /* margin: 10px 0;  */
 }
 
 #photo{
@@ -141,16 +139,16 @@ body{
     50% {
       border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
     }
-  }
+}
 
-  @media (max-width:1520px){
+@media (max-width:1520px){
     #home{
         margin-top:20px ;
         align-content: start;
     }
-  }
+}
 
-  @media (max-width:1200px) {
+@media (max-width:1200px) {
     #nav{
         width: 100%;
         margin: 0;
@@ -170,4 +168,33 @@ body{
     #photo{
         justify-content: center;
     }
-  }
+}
+
+@media (max-width:650px) {
+    #hello{
+        font-size: 20px;
+    }
+    #name{
+        font-size: 33px;
+    }
+    #designation{
+        font-size: 20px;
+    }
+    #content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    #top img{
+        width: 250px;
+        height: auto;
+        margin-top: -65px;
+    }
+    #bottom{
+        width: 235px;
+        height: 250px;
+    }
+    #nav ul{
+        display: none;
+    }
+}
