@@ -66,6 +66,7 @@ body{
     /* max-width: 50vw; */
     /* font-size: 29px; */
     font-size: 29px;
+    line-height: 40px;
     /* font-size: unset; */
 }
 
@@ -76,6 +77,7 @@ body{
 #name{
     color: var(--black);
     font-size: 47px;
+    line-height: 80px;
 }
 
 #hello{
@@ -130,6 +132,10 @@ body{
 
 .resumeDiv{
     width: 150px;
+}
+
+.resumeDiv .resume{
+    margin-top: 20px;
 }
 
 @keyframes wave {
