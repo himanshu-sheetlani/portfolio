@@ -13,12 +13,25 @@ body{
     background-color: var(--white);
 }
 
+.shape{
+    width: 800px;
+    height: 800px;
+    background: var(--blue);
+    position: absolute;
+    top: -100px;
+    left: -200px;
+    opacity: .1;
+    /* z-index: -1; */
+    animation: wave 4.0s ease-in-out infinite;
+}
+
 #nav{
     width: 100vw;
     background-color: var(--white);
     position: fixed;
     top: 0;
     height: 75px;
+    z-index: -2;
     /* display: flex; */
 }
 
@@ -173,6 +186,12 @@ body{
     }
     #photo{
         justify-content: center;
+    }
+    .shape{
+        top: -200px;
+        left: -200px;
+        width: 500px;
+        height: 500px;
     }
 }
 
