@@ -47,6 +47,22 @@ body{
     float: right;
 }
 
+#nav ul li:hover{
+    transition:.5s;
+    transform: scale(1.1);
+}
+#nav ul li::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0%;
+    background-color: var(--blue);
+}
+#nav ul li:hover::after{
+    width: 100%;
+    transition:.3s;
+}
+
 .color{
     color: var(--black);
     text-decoration: none;
@@ -57,14 +73,22 @@ body{
 
 }
 
-.switch {
+#resume::after,#switch::after{
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0%;
+    /* background-color: var(--blue); */
+}
+
+#switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
-.switch input { 
+#switch input { 
     display: none;
 }
 
@@ -188,7 +212,7 @@ input:checked + .slider:before {
     animation: wave 4.0s ease-in-out infinite;
 }
 
-.resume{
+#resume{
     height: 50px;
     width: 150px;
     display: flex;
@@ -292,6 +316,11 @@ input:checked + .slider:before {
     flex-direction: column;
     justify-content: start;
     line-height: 5px
+}
+
+#techStack ul li:hover{
+    transform: scale(1.15);
+    transition: .2s;
 }
 
 @keyframes wave {
