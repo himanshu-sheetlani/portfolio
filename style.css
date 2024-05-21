@@ -8,8 +8,9 @@
 }
 
 body{
-    margin: 25px 0;
-    padding: 20px 0;
+    margin: 25px 0 0 0;
+    padding: 20px 0 0 0;
+    overflow-x: hidden;
     background-color: var(--white);
 }
 
@@ -118,7 +119,8 @@ input:checked + .slider:before {
 }
 
 #home{
-    height: 80vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -159,7 +161,7 @@ input:checked + .slider:before {
 #photo{
     display: flex;
     justify-content: center;
-    margin-top: 125px;
+    
     /* height: 500px; */
 }
 
@@ -209,6 +211,89 @@ input:checked + .slider:before {
     margin-top: 20px;
 }
 
+#about{
+    height: 100vh;
+    padding: 25px;
+    background-color: #799dff4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: #4071f4;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hbottom{
+    position: absolute;
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    opacity: .15;
+    z-index: -1;
+}
+
+#upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.highlight{
+    color: #4071f4;
+}
+
+.sectionText{
+    width: 60vw;
+    padding: 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#techStack{
+    line-height: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#techStack ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#techStack ul li{
+    height: 100px;
+
+}
+
+#techStack ul a{
+    color: var(--blue);
+    margin: 0 30px;
+    
+}
+
+#techStack ul img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+#certificates{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 5px
+}
+
 @keyframes wave {
     0%, 100% {
       border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
@@ -222,6 +307,10 @@ input:checked + .slider:before {
     #home{
         margin-top:20px ;
         align-content: start;
+        height: 130vh;
+    }
+    #photo{
+        margin-top: 125px;
     }
 }
 
@@ -250,6 +339,9 @@ input:checked + .slider:before {
         left: -200px;
         width: 500px;
         height: 500px;
+    }
+    #home{
+        height: 140vh;
     }
 }
 
@@ -280,4 +372,23 @@ input:checked + .slider:before {
     #nav ul{
         display: none;
     }
+    #home{
+        height: 120vh;
+    }
 }
+
+
+
+
+
+/* .Typewriter__cursor{
+    -webkit-animation:Typewriter-cursor 1s infinite;
+    animation:Typewriter-cursor 1s infinite;
+    margin-left:1px
+}
+    @-webkit-keyframes Typewriter-cursor{
+        0%{opacity:0}50%{opacity:1}100%{opacity:0}
+    }
+    @keyframes Typewriter-cursor{
+        0%{opacity:0}50%{opacity:1}100%{opacity:0}
+    } */
