@@ -73,14 +73,6 @@ body{
 
 }
 
-#resume::after,#switch::after{
-    content: "";
-    display: block;
-    height: 0px;
-    width: 0%;
-    /* background-color: var(--blue); */
-}
-
 #switch {
     position: relative;
     display: inline-block;
@@ -212,7 +204,7 @@ input:checked + .slider:before {
     animation: wave 4.0s ease-in-out infinite;
 }
 
-#resume{
+.resume{
     height: 50px;
     width: 150px;
     display: flex;
