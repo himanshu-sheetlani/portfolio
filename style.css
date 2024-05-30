@@ -312,6 +312,41 @@ input:checked + .slider:before {
     transition: .2s;
 }
 
+#techStack ul li .popover {
+    height: auto;
+    width: auto;
+    background: var(--blue);
+    color: var(--white);
+    transition: 0.2s;
+    float: top;
+    position: relative;
+    visibility: hidden;
+    bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #techStack ul li .popover::before {
+    content: '';
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    border: 5px solid transparent;
+    border-top: 5px solid var(--blue);
+    color: var(--white);
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+  }
+
+  #techStack ul li:hover .popover,
+  .popover:hover {
+    width: 80px;
+    visibility: visible;
+    overflow: visible;
+  }
+
 @keyframes wave {
     0%, 100% {
       border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;

@@ -7,59 +7,48 @@
 </head>
 <body>
     <div class="clearfix">
-        
         <a href="example.com" class="figure"> Link </a>
         <div class="css-popover">User detail: ... bla bla bla ...</div>
       </div>
-      <div>Some content</div>
     <style>
         .figure {
-  height: 20px;
-  width: 100px;
-  /* background: pink; */
-  float: left;
-  margin: 0px;
-}
+          /* height: 20px;
+          width: 100px;
+          background: pink; */
+          float: left;
+        }
 
-.figure+.css-popover {
-  height: 50px;
-  width: 0px;
-  background: lightblue;
-  transition: all 0.3s ease;
-  float: left;
-  position: relative;
-  visibility: hidden;
-  left: 5px;
-  overflow: hidden;
-  padding: 10px;
-}
+        #techStack ul li+.css-popover {
+          height: 50px;
+          width: 0px;
+          background: lightblue;
+          transition: all 0.3s ease;
+          float: left;
+          position: relative;
+          visibility: hidden;
+          left: 5px;
+          overflow: hidden;
+          padding: 10px;
+        }
 
-.figure+.css-popover::before {
-  content: '';
-  display: inline-block;
-  height: 0px;
-  width: 0px;
-  border: 5px solid transparent;
-  border-right: 5px solid lightblue;
-  position: absolute;
-  top: 5px;
-  left: -10px;
-}
+        #techStack ul li+.css-popover::before {
+          content: '';
+          display: inline-block;
+          height: 0px;
+          width: 0px;
+          border: 5px solid transparent;
+          border-right: 5px solid lightblue;
+          position: absolute;
+          top: 5px;
+          left: -10px;
+        }
 
-.figure:hover+.css-popover,
-.css-popover:hover {
-  width: 100px;
-  visibility: visible;
-  overflow: visible;
-}
-
-.clearfic,
-.clearfix:after,
-.clearfix:before {
-  content: "";
-  clear: both;
-  display: table;
-}
+        #techStack ul li:hover+.css-popover,
+        .css-popover:hover {
+          width: 100px;
+          visibility: visible;
+          overflow: visible;
+        }
     </style>
 </body>
 </html>
