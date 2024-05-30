@@ -6,15 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="example.com" title="My site"> Link </a>
-    <!-- <style>
-        a[title] {
-          content: attr(title);
-          position: absolute;
-          background-color: blueviolet;
-          top: -100%;
-          left: 0;
-        }
-    </style> -->
+    <div class="clearfix">
+        
+        <a href="example.com" class="figure"> Link </a>
+        <div class="css-popover">User detail: ... bla bla bla ...</div>
+      </div>
+      <div>Some content</div>
+    <style>
+        .figure {
+  height: 20px;
+  width: 100px;
+  /* background: pink; */
+  float: left;
+  margin: 0px;
+}
+
+.figure+.css-popover {
+  height: 50px;
+  width: 0px;
+  background: lightblue;
+  transition: all 0.3s ease;
+  float: left;
+  position: relative;
+  visibility: hidden;
+  left: 5px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.figure+.css-popover::before {
+  content: '';
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  border: 5px solid transparent;
+  border-right: 5px solid lightblue;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+.figure:hover+.css-popover,
+.css-popover:hover {
+  width: 100px;
+  visibility: visible;
+  overflow: visible;
+}
+
+.clearfic,
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
 </body>
 </html>
