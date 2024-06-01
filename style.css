@@ -2,9 +2,10 @@
     --white: #ffffff;
     --black:#000;
     --blue:#4071f4;
-    --lightBlue: #799DFF;
+    --lightBlue: #4071f435;
     --blackBg:#232323;
     --orange:#e1684d;
+    --lightOrange:#e1684d35;
 }
 
 body{
@@ -228,9 +229,10 @@ input:checked + .slider:before {
 }
 
 #about{
-    height: 100vh;
+    height: auto;
+    width: 100vw;
     padding: 25px;
-    background-color: #799dff4f;
+    background-color: #799dff42;
     display: block;
 }
 
@@ -427,6 +429,29 @@ input:checked + .slider:before {
     }
     #home{
         height: 120vh;
+    }
+    #about{
+        padding: 0;
+    }
+    .sectionText{
+        width: 95vw;
+    }
+    #techStack ul{
+        padding: 0;
+    }
+    #techStack ul li{
+        height: auto;
+        width: 70px;
+    }
+    .hbottom h1{
+        font-size: 90%;
+    }
+    .heading{
+        font-size: 100%;
+        display: flex;
+    }
+    #pic img{
+        width: 60vw;
     }
 }
 
