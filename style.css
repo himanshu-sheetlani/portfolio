@@ -230,7 +230,7 @@ input:checked + .slider:before {
 
 #about{
     height: auto;
-    width: 100vw;
+    width: auto;
     padding: 25px;
     background-color: #799dff42;
     display: block;
@@ -405,7 +405,7 @@ input:checked + .slider:before {
         font-size: 20px;
     }
     #name{
-        font-size: 33px;
+        font-size: 30px;
     }
     #designation{
         font-size: 20px;
@@ -429,25 +429,32 @@ input:checked + .slider:before {
     }
     #home{
         height: 120vh;
+        width: auto;
     }
     #about{
         padding: 0;
+        width: 100vw;
     }
     .sectionText{
-        width: 95vw;
+        width: 100%;
     }
     #techStack ul{
         padding: 0;
+        /* display: flex;
+        justify-content: center; */
     }
     #techStack ul li{
         height: auto;
         width: 70px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .hbottom h1{
         font-size: 90%;
     }
     .heading{
-        font-size: 100%;
+        font-size: 120%;
         display: flex;
     }
     #pic img{
