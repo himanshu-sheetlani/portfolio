@@ -288,12 +288,12 @@ input:checked + .slider:before {
 
 #techStack ul li{
     height: 100px;
-
 }
 
-#techStack ul a{
+#techStack ul p{
     color: var(--blue);
     margin: 0 30px;
+    cursor: pointer;
     
 }
 
@@ -302,12 +302,6 @@ input:checked + .slider:before {
     border-radius: 10px;
 }
 
-#certificates{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    line-height: 5px
-}
 
 #techStack ul li:hover{
     transform: scale(1.15);
@@ -327,9 +321,9 @@ input:checked + .slider:before {
     overflow: hidden;
     padding: 10px;
     text-align: center;
-  }
+}
 
-  #techStack ul li .popover::before {
+#techStack ul li .popover::before {
     content: '';
     display: inline-block;
     height: 0px;
@@ -340,21 +334,151 @@ input:checked + .slider:before {
     position: absolute;
     bottom: -10px;
     left: 50px;
-  }
+}
 
-  #techStack ul li:hover .popover,
-  .popover:hover {
+#techStack ul li:hover .popover,
+.popover:hover {
     width: 80px;
     visibility: visible;
     overflow: visible;
-  }
+}
 
+#certificates{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
+    overflow-x: scroll;
+    /* overflow-y: visible; */
+    height: auto;
+    width: auto;
+    align-items: center;
+    line-height: 5px
+}
+
+.title{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    line-height: 20px;
+    width: 20vw;
+}
+
+.flip-container{
+
+  width: 350px;
+  height:450px;
+  background-color:transparent;
+  border-radius: 10px;
+  perspective: 1200px;
+  margin: 50px;
+}
+
+/* Flip Inner Container */
+.flip-inner-container{
+  position: relative;
+  width: 100%;
+  height: 95%;
+  line-height: 25px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  width: 350px;
+
+}
+/* add hover to Flip horizonally */
+.flip-container:hover .flip-inner-container{
+  transform: rotateY(180deg);
+}
+
+/* position front and back */
+
+.flip-front,
+.flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* background-color: green; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* flip  front from Start Here */
+.flip-front{
+    background: var(--blue);
+    color: #ffffff;
+    padding: 5px;
+}
+
+.flip-front img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;  
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.platform{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform img{
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #000000;
+  margin: 0;
+  padding: 10px;
+}
+
+.platform h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.flip-front h6{
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--white);
+  
+}
+
+.flip-back{
+    background: var(--blue);
+    color: var(--white);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    height: 45px;
+}
 @keyframes wave {
     0%, 100% {
-      border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+        border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
     }
     50% {
-      border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+        border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
     }
 }
 
@@ -462,6 +586,26 @@ input:checked + .slider:before {
     }
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3156bc; 
+  }
 
 
 
