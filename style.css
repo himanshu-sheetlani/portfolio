@@ -292,11 +292,13 @@ input:checked + .slider:before {
 #c1{
     background-color: var(--blue);
     rotate: 15deg;
+    animation: rotate1 3s infinite ease-in-out;
 }
 
 #c2{
     background-color: var(--lightBlue);
     rotate: -15deg;
+    animation: rotate2 3s infinite ease-in-out;
 }
 
 .sectionText{
@@ -513,6 +515,24 @@ input:checked + .slider:before {
     }
     50% {
         border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+    }
+}
+
+@keyframes rotate1 {
+    0%, 100% {
+        rotate: 15deg;
+    }
+    50% {
+        rotate: -15deg;
+    }
+}
+
+@keyframes rotate2 {
+    0%, 100% {
+        rotate: -15deg;
+    }
+    50% {
+        rotate: 15deg;
     }
 }
 
