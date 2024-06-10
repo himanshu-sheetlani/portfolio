@@ -267,14 +267,16 @@ input:checked + .slider:before {
 
 #pic{
     float: left;
-    width: 20vw;
     height: auto;
     display: flex;
+    margin: 50px;
     justify-content: center;
+    align-items: center;
 }
 
 #pic img{
-    width: 20vw;
+    width: 400px;
+    height: 530px;
     border-radius: 20px;
     display: flex;
 }
@@ -282,10 +284,9 @@ input:checked + .slider:before {
 #c1, #c2{
     z-index: -1;
     border-radius: 20px;
-    width: 20vw;
+    width: 400px;
+    height: 530px;
     position: absolute;
-    top: 122vh;
-    height: 675px;
 }
 
 #c1{
@@ -615,13 +616,12 @@ input:checked + .slider:before {
         display: flex;
     }
     #pic img{
-        width: 60vw;
+        width: 250px;
+        height: 330px;
     }
     #c1, #c2{
-        width: 60vw;
-        position: absolute;
-        top: 141vh;
-        height: 250px;
+        width: 250px;
+        height: 330px;
     }
 }
 
