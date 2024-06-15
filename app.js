@@ -1,4 +1,7 @@
 console.log("hello")
+
+alert("this portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
+
 function modeChange(){
     var body = document.body;
     let slider = document.querySelector("#tickBox");
