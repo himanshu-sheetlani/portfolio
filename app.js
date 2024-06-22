@@ -95,3 +95,23 @@ function modeChange(){
         
     }
 }
+
+let certiCont= document.querySelectorAll(".flip-container")
+for (let index=3; index<certiCont.length; index++){
+    certiCont[index].style.display="none";
+}
+
+function more(){
+    let button= document.querySelector(".button")
+    if(certiCont[4].style.display=="none"){
+        for (let index=3; index<certiCont.length; index++){
+            certiCont[index].style.display="flex";
+        }  
+        button.innerHTML="<span></span><span></span>SEE LESS<i class='material-symbols-outlined'>keyboard_double_arrow_up</i>";
+    }else{
+        for (let index=3; index<certiCont.length; index++){
+            certiCont[index].style.display="none";
+        }
+        button.innerHTML="<span></span><span></span>SEE ALL<i class='material-symbols-outlined'>keyboard_double_arrow_down</i>";
+    }
+}
