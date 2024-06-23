@@ -34,7 +34,6 @@ body{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.35);
     position: fixed;
     top: 0;
@@ -400,9 +399,25 @@ input:checked + .slider:before {
     display: flex;
     text-align: justify;
     flex-direction: column;
+    justify-content: center;
     line-height: 20px;
-    width: 30%;
-    margin: 45px;
+    width: 20%;
+    color: var(--white);
+    margin: 45px 45px 45px 90px;
+}
+
+#low{
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    right: -250px;
+    border-radius: 30px;
+    /* rotate: 45deg; */
+    box-shadow: inset -20px 0px 100px var(--black);
+    background-color: var(--blue);
+    z-index: -1;
+    border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+    animation: wave 5s ease-in-out infinite;
 }
 
 .flip-container{

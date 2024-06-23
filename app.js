@@ -23,6 +23,8 @@ function modeChange(){
     let popoverBefore=  document.querySelectorAll(".popover::before")
     let certificate= document.querySelectorAll(".flip-front")
     let certiBack= document.querySelectorAll(".flip-back")
+    let low = document.querySelector("#low")
+    let seeAll = document.querySelector(".button")
 
     if (slider.checked) {
         body.style.backgroundColor="var(--blackBg)";
@@ -37,6 +39,9 @@ function modeChange(){
         heading.style.color="var(--orange)"
         c1.style.backgroundColor="var(--orange)"
         c2.style.backgroundColor="var(--lightOrange)"
+        low.style.backgroundColor="var(--orange)"
+        seeAll.style.color="var(--orange)"
+        seeAll.style.textShadow="0 0 15px var(--orange)";
         // highlight.style.background="var(--orange)"
         for (let index=0 ; index < resume.length; index++) {
             resume[index].style.backgroundColor="var(--orange)"
@@ -74,6 +79,10 @@ function modeChange(){
         heading.style.color="var(--blue)"
         c1.style.backgroundColor="var(--blue)"
         c2.style.backgroundColor="var(--lightBlue)"
+        low.style.backgroundColor="var(--blue)"
+        seeAll.style.color="var(--blue)";
+        seeAll.style.textShadow="0 0 15px var(--blue)";
+
         for (let index=0 ; index < resume.length; index++) {
             resume[index].style.backgroundColor="var(--blue)"
         }
@@ -94,6 +103,10 @@ function modeChange(){
         }
         
     }
+
+    // document.querySelector(":root").style.setProperty('--blue', "#e1684d");
+    // document.querySelector(":root").style.setProperty('--lightBlue', "#e1684d35");
+    // document.querySelector("body").style.backgroundColor="var(--blackBg)";
 }
 
 let certiCont= document.querySelectorAll(".flip-container")
