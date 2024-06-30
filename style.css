@@ -138,6 +138,7 @@ input:checked + .slider:before {
 #container{
     /* background-color: var(--tertiary); */
     font-family: Arial, Helvetica, sans-serif;
+    scroll-snap-type: y mandatory;
 }
 
 #home{
@@ -235,7 +236,7 @@ input:checked + .slider:before {
 
 #about{
     height: auto;
-    width: auto;
+    width: 100vw;
     padding: 25px;
     background-color: var(--secondary);
     display: block;
@@ -396,6 +397,7 @@ input:checked + .slider:before {
     text-align: justify;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     line-height: 20px;
     width: 20%;
     color: var(--tertiary);
@@ -403,8 +405,8 @@ input:checked + .slider:before {
 }
 
 #low{
-    height: 600px;
-    width: 700px;
+    height: 55vh;
+    width: 33vw;
     position: absolute;
     right: -250px;
     border-radius: 30px;
@@ -626,6 +628,65 @@ input:checked + .slider:before {
 .button:hover span:nth-child(2) {
   top: 50%;
   width: 5vw;
+}
+
+#education{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 100px;
+    margin-left: -100px;
+}
+
+.edu{
+    color: var(--text);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.edu p{
+    display: flex;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.card{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    margin: -10px 35px -10px 50px;
+    background-color: white;
+    box-shadow: 2px 2px 19px 0px black;
+}
+
+.card h2{
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card h3{
+    font-size: 25px;
+    font-weight: 100;
+    color: green;
+}
+
+.img img{
+    /* width: 20%; */
+    height: 100%;
+    margin: 0 20px 0 0;
+    object-fit: cover;
+}
+
+.details{
+    margin: 0 50px 0 0;
 }
 
 

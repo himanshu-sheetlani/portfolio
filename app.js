@@ -4,19 +4,20 @@ console.log("hello")
 
 function modeChange(){
     let slider = document.querySelector("#tickBox");
+    let bg= document.querySelector("body")
     
     if (slider.checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
         document.querySelector(":root").style.setProperty('--text', "#fff");
         document.querySelector(":root").style.setProperty('--primDark', "#ae3e25");
-        document.querySelector("body").style.backgroundColor="var(--blackBg)";
+        bg.style.backgroundColor="var(--blackBg)";
     }else{
         document.querySelector(":root").style.setProperty('--primary', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#4071f435");
         document.querySelector(":root").style.setProperty('--text', "#000");
         document.querySelector(":root").style.setProperty('--primDark', "#3156bc");
-        document.querySelector("body").style.backgroundColor="var(--tertiary)";
+        bg.style.backgroundColor="var(--tertiary)";
     }
 }
 
