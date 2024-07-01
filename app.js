@@ -5,6 +5,7 @@ console.log("hello")
 function modeChange(){
     let slider = document.querySelector("#tickBox");
     let bg= document.querySelector("body")
+    let card= document.querySelectorAll(".card")
     
     if (slider.checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
@@ -12,12 +13,18 @@ function modeChange(){
         document.querySelector(":root").style.setProperty('--text', "#fff");
         document.querySelector(":root").style.setProperty('--primDark', "#ae3e25");
         bg.style.backgroundColor="var(--blackBg)";
+        card.forEach(i => {
+            i.style.backgroundColor="#232323"
+        });
     }else{
         document.querySelector(":root").style.setProperty('--primary', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#4071f435");
         document.querySelector(":root").style.setProperty('--text', "#000");
         document.querySelector(":root").style.setProperty('--primDark', "#3156bc");
         bg.style.backgroundColor="var(--tertiary)";
+        card.forEach(i => {
+            i.style.backgroundColor="#fff"
+        });
     }
 }
 
