@@ -443,23 +443,28 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form action="https://formspree.io/f/xpwaable" method="post">
-                        <div class="fName">
-                            <input class="i1" type="text" name="name" required> <br>
-                            <i class="label">Enter Your Name</i>
-                        </div>
-                        <div class="fEmail">
-                            <input class="i2" type="email" name="email" required> <br>
-                            <i class="label">Enter Your Email Address</i>
-                        </div>
-                        <div class="fMsg">
-                            <textarea name="message" required></textarea> <br>
-                            <i class="label">Enter Your Message...</i>
-                        </div>
-                        <button id="send" type="submit">Send</button>
-                    </form>
+                    <div class="formBox">
+                        <img src="./assets/contact.svg" alt="">
+                        <form action="https://formspree.io/f/xpwaable" method="post"">
+                            <div class="fName">
+                                <input class="i1" type="text" name="name" required> <br>
+                                <i class="label">Enter Your Name</i>
+                            </div>
+                            <div class="fEmail">
+                                <input class="i2" type="email" name="email" onblur="blurEmail(this)" required> <br>
+                                <i id ="emailLabel" class="label">Enter Your Email Address</i>
+                            </div>
+                            <div class="fMsg">
+                                <textarea name="message" required></textarea> <br>
+                                <i class="label">Enter Your Message...</i>
+                            </div>
+                            <button id="send" class="resume" type="submit">SEND</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            
         </div>
     </div>
     <div class="cursor-dot-outline"></div>

@@ -119,7 +119,10 @@ function modeChange(){
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
         document.querySelector(":root").style.setProperty('--text', "#fff");
         document.querySelector(":root").style.setProperty('--primDark', "#ae3e25");
+        document.querySelector(":root").style.setProperty('--whitebg', "#232323");
+        document.querySelector(":root").style.setProperty('--transparent', "rgba(0, 0, 0, 0.15)");
         bg.style.backgroundColor="var(--blackBg)";
+        document.querySelector(".formBox img").src="./assets/contact_Dark.svg"
         card.forEach(i => {
             i.style.backgroundColor="#232323"
         });
@@ -128,7 +131,10 @@ function modeChange(){
         document.querySelector(":root").style.setProperty('--secondary', "#4071f435");
         document.querySelector(":root").style.setProperty('--text', "#000");
         document.querySelector(":root").style.setProperty('--primDark', "#3156bc");
+        document.querySelector(":root").style.setProperty('--whitebg', "rgb(235, 235, 235)");
+        document.querySelector(":root").style.setProperty('--transparent', "rgba(255, 255, 255, 0.15)");
         bg.style.backgroundColor="var(--tertiary)";
+        document.querySelector(".formBox img").src="./assets/contact.svg"
         card.forEach(i => {
             i.style.backgroundColor="#fff"
         });
@@ -155,6 +161,11 @@ function more(){
     }
 }
 
-function blur(){
-    alert("blur");
+function blurEmail(email){
+    // alert("blur");
+    // let email= document.querySelector(".i2").value;
+    if (!(email.value.includes("@") && email.value.includes("."))) {
+        document.querySelector("#emailLabel").classList.add('labelUp')
+        email.classList.add("invalid")
+    }
 }
