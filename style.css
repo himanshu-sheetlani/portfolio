@@ -12,6 +12,7 @@ body{
     padding: 20px 0 0 0;
     overflow-x: hidden;
     background-color: var(--tertiary);
+    /* scroll-snap-type */
 }
 
 .shape{
@@ -51,6 +52,7 @@ body{
     padding: 0;
     width: 50%;
     float: right;
+    cursor: none;
 }
 
 #nav ul li:hover{
@@ -138,7 +140,9 @@ input:checked + .slider:before {
 #container{
     /* background-color: var(--tertiary); */
     font-family: Arial, Helvetica, sans-serif;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll; */
 }
 
 #home{
@@ -149,6 +153,7 @@ input:checked + .slider:before {
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
+    /* scroll-snap-align: start; */
 }
 
 #content{
@@ -184,6 +189,7 @@ input:checked + .slider:before {
 #photo{
     display: flex;
     justify-content: center;
+    /* animation: appear 5s linear; */
     
     /* height: 500px; */
 }
@@ -240,6 +246,7 @@ input:checked + .slider:before {
     padding: 25px;
     background-color: var(--secondary);
     display: block;
+    /* scroll-snap-align: start; */
 }
 
 .heading{
@@ -249,6 +256,9 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 .hbottom{
@@ -706,6 +716,146 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 
+/* #project{
+    height: 100vh;
+} */
+
+#contact{
+    /* padding: 100px; */
+    background: rgb(235, 235, 235);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact .heading{
+    width: 25vw;
+    font-size: 35px;
+    margin: 50px;
+}
+
+#contact .hbottom{
+    font-size: 80px;
+}
+
+.form{
+    width: 50vw;
+    height: 100vh;
+    border: 10px var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, textarea{
+    width: 300px;
+    /* height: 30px; */
+    border-radius: 25px;
+    padding: 10px;
+    margin: 12px;
+    font-size: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid black;
+    position: relative;
+    z-index: 3;
+}
+
+.fName{
+    top:-150px
+}
+.fEmail{
+    top:-75px
+}
+.fMsg{
+    top:0;
+}
+
+.label{
+    position: absolute;
+    padding: 0 25px;
+    width: auto;
+    font-size: 20px;
+    /* z-index: -1; */
+    /* color: black;  */
+}
+
+.fName .label{
+    top:25px
+}
+.fEmail .label{
+    top:95px
+}
+.fMsg .label{
+    top:165px
+}
+
+input:focus,
+input:valid{
+    /* transform: translateY(-7.5px); */
+    border: 3px solid var(--primary);
+}
+
+input:focus~i,
+input:valid~i{
+    transform: translateY(-17px);
+    z-index: 3;
+    background-color: rgb(235, 235, 235);
+    font-size: 13px;
+    padding: 0 5px;
+    color: var(--primary);
+    transition: 1s;
+    margin-left: 20px;
+}
+
+input:invalid~i{
+    transform: translateY(-17px);
+    z-index: 3;
+    background-color: rgb(235, 235, 235);
+    font-size: 13px;
+    padding: 0 5px;
+    color: red;
+    transition: 1s;
+    margin-left: 20px;
+}
+
+input:invalid{
+    border: 3px solid red;
+}
+
+/*
+#send{
+    top: 75px;
+}
+
+input:focus,
+input:valid{
+    color: var(--primary);
+    border: 3px solid var(--primary);
+}
+
+input:focus ~.label,
+input:valid ~.label{
+    color: var(--primary);
+    transform: translateY(-15px);
+} */
+
+/* textarea:focus ~.label,
+textarea:valid ~.label{
+    color: var(--primary);
+    transform: translateY(-15px);
+} */
 
 @keyframes wave {
     0%, 100% {
@@ -731,6 +881,17 @@ input:checked + .slider:before {
     }
     50% {
         rotate: 15deg;
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        scale: 0.5;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
     }
 }
 
@@ -770,6 +931,7 @@ input:checked + .slider:before {
         left: -200px;
         width: 500px;
         height: 500px;
+        scroll-snap-align: start;
     }
     #home{
         height: 140vh;
@@ -926,16 +1088,33 @@ input:checked + .slider:before {
 }
 
 
-
-
-/* .Typewriter__cursor{
-    -webkit-animation:Typewriter-cursor 1s infinite;
-    animation:Typewriter-cursor 1s infinite;
-    margin-left:1px
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
 }
-    @-webkit-keyframes Typewriter-cursor{
-        0%{opacity:0}50%{opacity:1}100%{opacity:0}
-    }
-    @keyframes Typewriter-cursor{
-        0%{opacity:0}50%{opacity:1}100%{opacity:0}
-    } */
+
+
+
+body{
+    cursor: none;
+}
+.cursor-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+}
+
+.cursor-dot-outline {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary);
+}

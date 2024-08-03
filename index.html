@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="shape"></div>
     <div id="container">
         <div id="nav">
             <ul type="none">
@@ -40,6 +39,7 @@
         </div>
 
         <div id="home">
+        <div class="shape"></div>
             <div id="content">
                 <div id="hello">
                     <h3>HELLO,</h3>
@@ -429,29 +429,42 @@
                 
             </div>
         </div>
-
-        <div id="project">
-
         </div>
-
-        <div id="contact">
-            <!-- <form action="https://formspree.io/f/xpwaable" method="post">
-                <label>
-                    Name:
-                    <input type="text" name="name" placeholder="Enter Your Name" required> <br>
-                </label>
-                <label>
-                    E-Mail:
-                    <input type="email" name="email" placeholder="Enter Your Email Address" required> <br>
-                </label>
-                <label>
-                    Message:
-                    <textarea name="message" placeholder="Enter Your Message" required></textarea> <br>
-                </label>
-                <button type="submit">Send</button>
-            </form> -->
+        <div id="project">
+        </div>
+        <div id="contactParent">
+            <div id="contact">
+                <div class="heading">
+                    <div class="hTop">
+                        <h1>Let's Work Together</h1>
+                    </div>
+                    <div class="hbottom">
+                        <h1>CONTACT</h1>
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="https://formspree.io/f/xpwaable" method="post">
+                        <div class="fName">
+                            <input class="i1" type="text" name="name" required> <br>
+                            <i class="label">Enter Your Name</i>
+                        </div>
+                        <div class="fEmail">
+                            <input class="i2" type="email" name="email" required> <br>
+                            <i class="label">Enter Your Email Address</i>
+                        </div>
+                        <div class="fMsg">
+                            <textarea name="message" required></textarea> <br>
+                            <i class="label">Enter Your Message...</i>
+                        </div>
+                        <button id="send" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <script src="./app.js"></script>
     <!-- fontawesome -->
