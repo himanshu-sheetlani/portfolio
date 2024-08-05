@@ -730,7 +730,7 @@ input:checked + .slider:before {
 
 #contact{
     background: var(--whitebg);
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1194,8 +1194,11 @@ textarea:valid ~.label{
     .hbottom h1{
         font-size: 90%;
     }
+    .hTop h1{
+        font-size: 90%;
+    }
     .heading{
-        font-size: 120%;
+        /* font-size: 120%; */
         display: flex;
     }
     #pic img{
@@ -1229,6 +1232,24 @@ textarea:valid ~.label{
     }
     .details{
         align-items: center;
+    }
+    #contact{
+        flex-direction: column;
+    }
+    #contact .heading{
+        width: 100%;
+        margin: 0;
+    }
+    .form{
+        height: auto;
+        width: auto;
+    }
+    .formBox{
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    input, textarea{
+        width: 250px;
     }
 }
 
