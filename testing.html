@@ -1,54 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <div class="clearfix">
-        <a href="example.com" class="figure"> Link </a>
-        <div class="css-popover">User detail: ... bla bla bla ...</div>
-      </div>
-    <style>
-        .figure {
-          /* height: 20px;
-          width: 100px;
-          background: pink; */
-          float: left;
-        }
+<h1>HTML DOM Events</h1>
+<h2>The blur Event</h2>
 
-        #techStack ul li+.css-popover {
-          height: 50px;
-          width: 0px;
-          background: lightblue;
-          transition: all 0.3s ease;
-          float: left;
-          position: relative;
-          visibility: hidden;
-          left: 5px;
-          overflow: hidden;
-          padding: 10px;
-        }
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
 
-        #techStack ul li+.css-popover::before {
-          content: '';
-          display: inline-block;
-          height: 0px;
-          width: 0px;
-          border: 5px solid transparent;
-          border-right: 5px solid lightblue;
-          position: absolute;
-          top: 5px;
-          left: -10px;
-        }
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
 
-        #techStack ul li:hover+.css-popover,
-        .css-popover:hover {
-          width: 100px;
-          visibility: visible;
-          overflow: visible;
-        }
-    </style>
+<script>
+function myFunction() {
+  alert("blur")
+  // let x = document.getElementById("fname");
+  // if(x.value ==""){
+  // x.style.border="2px solid red"
+  // }
+  // else{
+  // x.style.border="2px solid green"
+  // }
+}
+</script>
+
 </body>
 </html>
