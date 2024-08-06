@@ -1235,6 +1235,7 @@ textarea:valid ~.label{
     }
     #contact{
         flex-direction: column;
+        max-width: 95vw;
     }
     #contact .heading{
         width: 100%;
