@@ -1,3 +1,4 @@
+alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
 console.log("hello")
 
 
@@ -105,9 +106,6 @@ var cursor = {
 }
 
 cursor.init();
-
-
-// alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
 
 function modeChange(){
     let slider = document.querySelector("#tickBox");
