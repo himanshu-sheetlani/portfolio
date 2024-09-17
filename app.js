@@ -1,5 +1,5 @@
-alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
-console.log("hello")
+// alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
+// console.log("hello")
 
 
 var cursor = {

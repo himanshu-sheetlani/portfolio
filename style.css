@@ -15,7 +15,7 @@ html{
 }
 
 body{
-    margin: 25px 0 0 0;
+    margin: 50px 0 0 0;
     padding: 20px 0 0 0;
     overflow-x: hidden;
     background-color: var(--tertiary);
@@ -57,8 +57,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     font-size: 18px;
-    padding: 0;
-    width: 50%;
+    padding: 0 20px 0 0;
+    width: 60%;
     float: right;
     cursor: none;
 }
@@ -168,6 +168,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 25px;
 }
 
 #designation{
@@ -198,7 +199,6 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     /* animation: appear 5s linear; */
-    
     /* height: 500px; */
 }
 
@@ -286,9 +286,9 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-/* .highlight{
+.ed{
     color: var(--primary);
-} */
+}
 
 #pic{
     float: left;
@@ -327,8 +327,9 @@ input:checked + .slider:before {
 }
 
 .sectionText{
-    width: 60vw;
+    width: 55vw;
     padding: 30px;
+    margin-right: 35px;
     text-align: justify;
     font-size: 18px;
     color: var(--text);
@@ -472,15 +473,14 @@ input:checked + .slider:before {
 
 .flip-container{
 
-  width: 350px;
+  width: 300px;
   height:450px;
   background-color:transparent;
   border-radius: 10px;
   perspective: 1200px;
-  margin: 45px;
+  margin: 25px;
 }
 
-/* Flip Inner Container */
 .flip-inner-container{
   position: relative;
   width: 100%;
@@ -489,15 +489,11 @@ input:checked + .slider:before {
   text-align: center;
   transform-style: preserve-3d;
   transition: transform 0.8s;
-  /* width: 350px; */
-
 }
-/* add hover to Flip horizonally */
+
 .flip-container:hover .flip-inner-container{
   transform: rotateY(180deg);
 }
-
-/* position front and back */
 
 .flip-front,
 .flip-back{
@@ -695,9 +691,10 @@ input:checked + .slider:before {
 
 .edu{
     color: var(--text);
-    width: 20%;
+    width: 25%;
     display: flex;
-    justify-content: center;
+    text-align: left;    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
 }
 
 .edu p{
@@ -1109,6 +1106,58 @@ textarea:valid ~.label{
     #photo{
         margin-top: 125px;
     }
+}
+
+@media (max-width:1450px) {
+    /* #top{
+        height: 200px;
+        width: auto;
+    }
+    #top img{
+        width: 400px;
+        height: auto;
+        margin-top: -45px;
+    } */
+    #name{
+       font-size: 38px;
+    }
+    #hello{
+       font-size: 20px;
+    }
+    #designation{
+       font-size: 20px;
+    }
+    #home{
+        height: 145vh;
+    }
+} 
+
+@media (max-width:1360px) {
+    #name{
+        font-size: 35px;
+    }
+    #hello{
+       font-size: 18px;
+    }
+    #designation{
+       font-size: 18px;
+    }
+    #home{
+        height: 145vh;
+    }
+    /* .flip-container{
+        width: 250px;
+        height:400px;
+    }
+    .flip-front h6{
+        font-size: 20px;
+    }
+    .platform h3{
+        font-size: 25px;
+    } */
+    /* #aboutText{ */
+        /* padding-left: 75px; */
+    /* } */
 }
 
 @media (max-width:1200px) {
