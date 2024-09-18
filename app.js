@@ -167,3 +167,15 @@ function blurEmail(email){
         email.classList.add("invalid")
     }
 }
+
+// function scroll(){
+//     console.log("scroll");
+//     forEach(document.querySelectorAll(".cardProject"), function (card) {
+//         card.style.opacity=0;
+//     });
+    // let count=0;
+    // let card= document.querySelectorAll(".cardProject")
+    // card[count].style.opacity=0;
+    // count++;
+    // card[count].style.opacity=1;
+// }

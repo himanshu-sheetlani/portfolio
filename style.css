@@ -473,8 +473,8 @@ input:checked + .slider:before {
 
 .flip-container{
 
-  width: 300px;
-  height:450px;
+  width: 350px;
+  height:470px;
   background-color:transparent;
   border-radius: 10px;
   perspective: 1200px;
@@ -755,10 +755,6 @@ input:checked + .slider:before {
     flex-direction: column;
 }
 
-/* #project{
-    height: 100vh;
-} */
-
 #contact{
     background: var(--whitebg);
     height: 100vh;
@@ -1003,28 +999,119 @@ input:valid~i{
     border: 3px solid red;
 }
 
-/*
-#send{
-    top: 75px;
+#project{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
 }
 
-input:focus,
-input:valid{
-    color: var(--primary);
-    border: 3px solid var(--primary);
+.start{
+    margin: 100px 0;
+    height: 80vh;
+    width: 85vw;
+    background-color: var(--whitebg);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(800px) translateY(0px) translateY(0px) rotateX(0deg) translateZ(0px);
+    animation: moveUp linear forwards;
+    animation-timeline: view();
+    animation-range: contain 300px;
+    animation-range-end: contain 60vh; 
 }
 
-input:focus ~.label,
-input:valid ~.label{
-    color: var(--primary);
-    transform: translateY(-15px);
-} */
+.projectCard, .projectCardDublicate{
+    height: auto;
+    width: 85vw;
+    background-color: var(--whitebg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: absolute;
+    position: sticky; */
+}
 
-/* textarea:focus ~.label,
-textarea:valid ~.label{
+.projectCard{
+    margin: 100px 0 0 0;
+    border-radius: 25px 25px 0 0;
+    transform: perspective(800px) translateY(0px) translateY(0px) rotateX(70deg) translateZ(0px);
+    box-shadow: 0.2s;
+    animation: moveDown linear forwards;
+    animation-timeline: view();
+    /* animation-range: entry 0 cover 30%; */
+    animation-range-start: contain -1000px;
+    animation-range-end: contain 20vh; 
+    z-index: 1;
+}
+
+.projectCardDublicate{
+    border-radius:0 0 25px 25px;
+    margin: 0 0 100px 0;
+    z-index: 20;
+}
+
+.cardProject{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+    /* flex-direction: row; */
+}
+
+.projectCardDublicate .cardProject{
+    animation: moveSide linear forwards;
+    animation-timeline: view(0%);
+    animation-range: entry 0 cover 50%;
+    /* animation-range-end: contain 20vh;  */
+}
+
+
+.cardProject img{
+    border: var(--primary) 2px solid;
+    width: auto;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    margin: 20px;
+
+}
+
+.cardProject .details{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h2{
+    font-size: 32px;
     color: var(--primary);
-    transform: translateY(-15px);
-} */
+    margin: 5px;
+}
+
+.details p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    color: var(--text);
+}
 
 @keyframes wave {
     0%, 100% {
@@ -1097,6 +1184,39 @@ textarea:valid ~.label{
     }
 }
 
+@keyframes moveUp {
+    to{
+      transform: perspective(1200px) translateY(0px) rotateX(-90deg) translateZ(0px);
+      box-shadow: 0.2s;
+      transition: 3s;
+      box-shadow: var(--primary) 0px 0px 300px 200px;
+      /* transform: translateY(-50px); */
+    }
+} 
+
+@keyframes moveDown {
+    from{
+        box-shadow: var(--primary) 0px 0px 300px 200px;
+    }
+    to{
+      transform: perspective(1200px) translateY(0px) rotateX(0deg) translateZ(0px);
+      transition: 3s;
+      box-shadow:0px;
+      box-shadow: transparent;
+      /* transform: translateY(-50px); */
+    }
+} 
+
+@keyframes moveSide {
+    from{
+        transform: perspective(800px) translateX(-1000px) translateY(0px) translateZ(0px);
+    }
+    
+    to{
+        transform: perspective(800px) translateX(0px) translateY(0px) translateZ(0px);
+    }
+}
+
 @media (max-width:1520px){
     #home{
         margin-top:20px ;
@@ -1105,6 +1225,10 @@ textarea:valid ~.label{
     }
     #photo{
         margin-top: 125px;
+    }
+    .flip-container{
+        width: 300px;
+        height:450px;
     }
 }
 
