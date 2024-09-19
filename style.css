@@ -6,6 +6,7 @@
     --secondary: #4071f435;
     --primDark: #3156bc;
     --blackBg:#232323;
+    --mouse:#e1684d;
     --whitebg:rgb(235, 235, 235);
     --transparent:rgba(255, 255, 255, 0.15);
 }
@@ -169,6 +170,7 @@ input:checked + .slider:before {
     justify-content: center;
     flex-direction: column;
     margin: 25px;
+    animation: blur 1s linear;
 }
 
 #designation{
@@ -198,6 +200,7 @@ input:checked + .slider:before {
 #photo{
     display: flex;
     justify-content: center;
+    animation: blur 1s linear;
     /* animation: appear 5s linear; */
     /* height: 500px; */
 }
@@ -370,10 +373,17 @@ input:checked + .slider:before {
 
 #techStack{
     line-height: 5px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+}
+
+#techStack h1, #techStack p{
+    animation: blur 5s linear;
+    animation-timeline: view(0%);
+    animation-range: entry 0 cover 30%;
 }
 
 #techStack ul{
@@ -384,6 +394,9 @@ input:checked + .slider:before {
 
 #techStack ul li{
     height: 100px;
+    animation: blur 1s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 
 #techStack ul p{
@@ -455,6 +468,9 @@ input:checked + .slider:before {
     width: 20%;
     color: var(--tertiary);
     margin: 45px;
+    animation: entry 1s linear;
+    animation-timeline: view(-15%);
+    animation-range: entry -10px cover 30%;
 }
 
 #low{
@@ -479,6 +495,9 @@ input:checked + .slider:before {
   border-radius: 10px;
   perspective: 1200px;
   margin: 25px;
+  animation: entry 1s linear;
+  animation-timeline: view(0%);
+  animation-range: entry 0 cover 30%;
 }
 
 .flip-inner-container{
@@ -711,6 +730,9 @@ input:checked + .slider:before {
     background-color: white;
     box-shadow: 5px 5px 19px 0px black;
     overflow: hidden;
+    animation: blur 5s linear;
+    animation-timeline: view(0%);
+    animation-range: entry 0 cover 40%;
 }
 
 .card:hover{
@@ -1217,6 +1239,37 @@ input:valid~i{
     }
 }
 
+@keyframes blur{
+    0%{
+        /* filter: blur(5px); */
+        /* transform:translateX(-500px); */
+        opacity: 0;
+    }
+    100%{
+        /* filter: blur(0px); */
+        /* transform:translateX(0px); */
+        opacity: 1;
+    }
+}
+
+@keyframes entry{
+    0%{
+        transform:translateX(500px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+
+/* @keyframes op{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+
 @media (max-width:1520px){
     #home{
         margin-top:20px ;
@@ -1268,6 +1321,9 @@ input:valid~i{
     }
     #home{
         height: 145vh;
+    }
+    .cardProject{
+        flex-wrap: wrap;
     }
     /* .flip-container{
         width: 250px;
@@ -1333,6 +1389,7 @@ input:valid~i{
     }
     .img img{
         width: 300px;
+        height: auto;
     }
     #education{
         flex-direction: column;
@@ -1353,6 +1410,15 @@ input:valid~i{
     }
     .card h3{
         font-size: 20px;
+    }
+}
+
+@media (max-width:1000px) {
+    .cardProject .img img{
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1516,7 +1582,7 @@ body{
 .cursor-dot {
     width: 10px;
     height: 10px;
-    background-color: var(--primary);
+    background-color: var(--mouse);
 }
 
 .cursor-dot-outline {

@@ -114,6 +114,7 @@ function modeChange(){
     
     if (slider.checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
+        document.querySelector(":root").style.setProperty('--mouse', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
         document.querySelector(":root").style.setProperty('--text', "#fff");
         document.querySelector(":root").style.setProperty('--primDark', "#ae3e25");
@@ -126,6 +127,7 @@ function modeChange(){
         });
     }else{
         document.querySelector(":root").style.setProperty('--primary', "#4071f4");
+        document.querySelector(":root").style.setProperty('--mouse', "#e1684d");
         document.querySelector(":root").style.setProperty('--secondary', "#4071f435");
         document.querySelector(":root").style.setProperty('--text', "#000");
         document.querySelector(":root").style.setProperty('--primDark', "#3156bc");
