@@ -1,5 +1,5 @@
-alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
-console.log("hello")
+// alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
+// console.log("hello")
 
 
 var cursor = {
@@ -114,6 +114,7 @@ function modeChange(){
     
     if (slider.checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
+        document.querySelector(":root").style.setProperty('--mouse', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
         document.querySelector(":root").style.setProperty('--text', "#fff");
         document.querySelector(":root").style.setProperty('--primDark', "#ae3e25");
@@ -126,6 +127,7 @@ function modeChange(){
         });
     }else{
         document.querySelector(":root").style.setProperty('--primary', "#4071f4");
+        document.querySelector(":root").style.setProperty('--mouse', "#e1684d");
         document.querySelector(":root").style.setProperty('--secondary', "#4071f435");
         document.querySelector(":root").style.setProperty('--text', "#000");
         document.querySelector(":root").style.setProperty('--primDark', "#3156bc");
@@ -167,3 +169,21 @@ function blurEmail(email){
         email.classList.add("invalid")
     }
 }
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+}
+
+
+// function scroll(){
+//     console.log("scroll");
+//     forEach(document.querySelectorAll(".cardProject"), function (card) {
+//         card.style.opacity=0;
+//     });
+    // let count=0;
+    // let card= document.querySelectorAll(".cardProject")
+    // card[count].style.opacity=0;
+    // count++;
+    // card[count].style.opacity=1;
+// }

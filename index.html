@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="container">
+    <!-- <div id="container">
         <div id="nav">
             <ul type="none">
                 <li><a class="color" href="#home">HOME</a></li>
@@ -37,11 +37,37 @@
                         <span class="slider"></span>
                     </label>
                 </li>
-            </ul>
-        </div>
+            </ul>    
+        </div> -->
+
+        <div id="nav">
+            <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <label id="switch">
+                    <input type="checkbox" onclick="modeChange()" id="tickBox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+                <ul id="nav-links" class="nav-links" type="none">
+                    <li><a class="color" href="#home">HOME</a></li>
+                    <li><a class="color" href="#about">ABOUT ME</a></li>
+                    <li><a class="color" href="#project">PROJECTS</a></li>
+                    <li><a class="color" href="#contact">CONTACT</a></li>
+                    <li><a class="resume" href="./assets/Himanshu Sheetlani resume.pdf" style="color: white;">RESUME</a></li>
+                    <li id="in">
+                        <label id="switch">
+                            <input type="checkbox" onclick="modeChange()" id="tickBox">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        
 
         <div id="home">
-        <div class="shape"></div>
+            <div class="shape"></div>
             <div id="content">
                 <div id="hello">
                     <h3>HELLO,</h3>
@@ -197,6 +223,23 @@
                         <div class="flip-container">
                             <div class="flip-inner-container">
                                 <div class="flip-front">
+                                    <img src="./assets/IICPC.png">
+                                    <h6>IICPC Summer Camp 2024</h6>
+                                    <div class="platform"><img src="https://media.licdn.com/dms/image/v2/D560BAQF84_idVXnRHw/img-crop_100/img-crop_100/0/1724528201296?e=1734566400&v=beta&t=17LxV27XYLjkJFGei31J36yW8DbxuL1ieQXe2-RsZPw"> <h3>IICPC(Inter IIT Competitive Programming Conclave)</h3></div>
+                                </div>
+                                <div class="flip-back">
+                                    <h2>Skills: <br> Competitive Programming</h2>
+                                    <p style="margin: 0 40px; text-align: justify;">I completed the IICPC(Inter IIT Competitive Programming Conclave) Summer Camp, a 2-month program that really pushed my coding skills to the next level.  </p>
+                                    <h4>Issued On: <br>01 SEPTEMBER 2024</h4>
+                                    <div class="circle">
+                                        <a href="https://drive.google.com/file/d/10RvA64t27AWc9tmxK_dB1FTNir9jmRQZ/view?usp=sharing"><img src="https://cdn.icon-icons.com/icons2/2550/PNG/512/external_link_icon_152621.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-container">
+                            <div class="flip-inner-container">
+                                <div class="flip-front">
                                     <img src="./assets/certi2.jpg">
                                     <h6>Postman API Fundamentals Student Expert</h6>
                                     <div class="platform"><img src="https://skillicons.dev/icons?i=postman"> <h3>Postman</h3></div>
@@ -220,6 +263,7 @@
                                 </div>
                                 <div class="flip-back">
                                     <h2>Skills: <br> C/C++</h2>
+                                    <p style="margin: 0 40px; text-align: justify;">I participated in the Decode-a-thon, where my team tackled challenging problems on C and C++ programming languages.</p>
                                     <h4>Issued On: <br>22 MAY 2024</h4>
                                     <div class="circle">
                                         <a href="https://drive.google.com/file/d/1iDjkuoOhmZyArNOlhSPIInHPdioQhUV4/view?usp=sharing"><img src="https://cdn.icon-icons.com/icons2/2550/PNG/512/external_link_icon_152621.png" alt=""></a>
@@ -265,7 +309,7 @@
                                 <div class="flip-front">
                                     <img src="./assets/certi5.jpg">
                                     <h6>Prayatna - 36Hrs National Level Hackathon</h6>
-                                    <div class="platform"><img src="http://rb.gy/wcxrvj"> <h4>Acropolis Institute of Technology & Research</h4></div>
+                                    <div class="platform"><img src="https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/20200403122812.png?v=20200403122812"> <h4>Acropolis Institute of Technology & Research</h4></div>
                                 </div>
                                 <div class="flip-back">
                                     <h2>Skills: <br> Web Devlopment</h2>
@@ -371,7 +415,11 @@
                 </div>
                 <div id="education">
                     <div class="title edu">
-                        <h1><i class="fa-solid fa-graduation-cap"></i> My <span class="highlight"> Education</span></h1>
+                        <h1>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>My</span> 
+                            <span class="ed"> Education</span>
+                        </h1>
                         <p>Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.</p>
                     </div>
                     <div class="educationCard">
@@ -431,6 +479,64 @@
         </div>
         </div>
         <div id="project">
+            <div class="start">
+                <div class="heading">
+                    <div class="hTop">
+                        <h1>My Projects</h1>
+                    </div>
+                    <div class="hbottom">
+                        <h1>PROJECTS</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="projectBody">
+                <div class="projectCard">
+                    <div class="cardProject">
+                        <div class="img">
+                            <img src="./assets/Portfolio.png" alt="">
+                        </div>
+                        <div class="details">
+                            <h2>Portfolio Website</h2>
+                            <p>My Portfolio Website</p>
+                            <div class="links">
+                                <a class="resume" href="https://himanshu-sheetlani.vercel.app/" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                                <a class="resume" href="https://github.com/himanshu-sheetlani/portfolio" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="projectCardDublicate">
+                        <div class="cardProject">
+                            <div class="img">
+                                <img src="./assets/quickRead.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>QuickRead News</h2>
+                                <p>A News Website</p>
+                                <div class="links">
+                                    <a class="resume" href="https://quickreadnews.vercel.app/#" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                                    <a class="resume" href="https://github.com/himanshu-sheetlani/QuickRead" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardProject">
+                            <div class="img">
+                                <img src="./assets/att-calc.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h2>Attendance Calculator</h2>
+                                <p>Academic website</p>
+                                <div class="links">
+                                    <a class="resume" href="https://attendance-calculator-aitr.vercel.app/" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                                    <a class="resume" href="https://github.com/himanshu-sheetlani/attendance-calc" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                
+            </div>
         </div>
         <div id="contactParent">
             <div id="contact">
