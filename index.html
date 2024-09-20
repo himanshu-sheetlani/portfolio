@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="container">
+    <!-- <div id="container">
         <div id="nav">
             <ul type="none">
                 <li><a class="color" href="#home">HOME</a></li>
@@ -37,8 +37,34 @@
                         <span class="slider"></span>
                     </label>
                 </li>
-            </ul>
-        </div>
+            </ul>    
+        </div> -->
+
+        <div id="nav">
+            <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <label id="switch">
+                    <input type="checkbox" onclick="modeChange()" id="tickBox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+                <ul id="nav-links" class="nav-links" type="none">
+                    <li><a class="color" href="#home">HOME</a></li>
+                    <li><a class="color" href="#about">ABOUT ME</a></li>
+                    <li><a class="color" href="#project">PROJECTS</a></li>
+                    <li><a class="color" href="#contact">CONTACT</a></li>
+                    <li><a class="resume" href="./assets/Himanshu Sheetlani resume.pdf" style="color: white;">RESUME</a></li>
+                    <li id="in">
+                        <label id="switch">
+                            <input type="checkbox" onclick="modeChange()" id="tickBox">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        
 
         <div id="home">
             <div class="shape"></div>

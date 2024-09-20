@@ -170,6 +170,12 @@ function blurEmail(email){
     }
 }
 
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+}
+
+
 // function scroll(){
 //     console.log("scroll");
 //     forEach(document.querySelectorAll(".cardProject"), function (card) {

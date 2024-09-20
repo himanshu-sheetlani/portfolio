@@ -22,6 +22,7 @@ body{
     background-color: var(--tertiary);
     /* scroll-snap-type */
     transition: 1s;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .shape{
@@ -137,10 +138,38 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* input:checked  #designation{
-    /* background-color: var(--blackBg); */
-    /* color: var(--orange); */
-/* } */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+}
+
+.hamburger i {
+    font-size: 24px;
+    color: var(--text);
+}
+
+.nav-container{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* padding: 0 20px; */
+}
+
+.nav-container #switch{
+    display: none;
+}
+
+#nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+/* #nar-link.active li{
+    color: var(--tertiary);
+} */
 
 .dark-mode{
     background-color: var(--blackBg);
@@ -1415,8 +1444,9 @@ input:valid~i{
 
 @media (max-width:1000px) {
     .cardProject .img img{
-        width: 70%;
-        height: auto;
+        width: 80%;
+    }
+    .cardProject .img{
         display: flex;
         justify-content: center;
     }
@@ -1449,6 +1479,41 @@ input:valid~i{
     #nav ul{
         display: none;
     }
+    /* .myLinks a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } */
+    /* .navMobile{
+        display: flex;
+        justify-content: space-around;
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100vw;
+        background-color: #333;
+    }
+    #nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+    #nav-links li a {
+        color: white;
+        text-decoration: none;
+    }
+    #nav-links li:hover {
+        background-color: #575757;
+        border-radius: 25px;
+    }
+    #nav-links.show {
+        display: flex;
+    } */
     #home{
         height: 120vh;
         width: auto;
@@ -1537,6 +1602,44 @@ input:valid~i{
         display: none;
     }
     #contactParent span:nth-of-type(11){
+        display: none;
+    }
+    .cardProject .img img{
+        width: 100%;
+        /* height: 150px; */
+    }
+    .cardProject .details{
+        margin: 0;
+        flex-direction: column;
+        /* scale: 0.8; */
+    }
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+    .color{
+        color: var(--tertiary);
+    }
+    #nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .nav-container{
+        display: flex;
+    }
+    .nav-container #switch{
+        display: flex;
+    }
+    #in{
         display: none;
     }
 }
