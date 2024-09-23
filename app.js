@@ -1,7 +1,3 @@
-// alert("My portfolio is still under construction but still you can visit it...       ~Himanshu Sheetlani")
-// console.log("hello")
-
-
 var cursor = {
     delay: 8,
     _x: 0,
@@ -53,20 +49,6 @@ var cursor = {
             self.$dot.style.top = self.endY + 'px';
             self.$dot.style.left = self.endX + 'px';
         });
-        
-        document.addEventListener('mouseenter', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        });
-        
-        document.addEventListener('mouseleave', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        });
     },
     
     animateDotOutline: function() {
@@ -107,12 +89,12 @@ var cursor = {
 
 cursor.init();
 
-function modeChange(){
-    let slider = document.querySelector("#tickBox");
+function modeChange(n){
+    let slider = document.querySelectorAll("#tickBox");
     let bg= document.querySelector("body")
     let card= document.querySelectorAll(".card")
     
-    if (slider.checked) {
+    if (slider[n].checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
         document.querySelector(":root").style.setProperty('--mouse', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
@@ -162,8 +144,6 @@ function more(){
 }
 
 function blurEmail(email){
-    // alert("blur");
-    // let email= document.querySelector(".i2").value;
     if (!(email.value.includes("@") && email.value.includes("."))) {
         document.querySelector("#emailLabel").classList.add('labelUp')
         email.classList.add("invalid")
@@ -174,16 +154,3 @@ function toggleMenu() {
     const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active');
 }
-
-
-// function scroll(){
-//     console.log("scroll");
-//     forEach(document.querySelectorAll(".cardProject"), function (card) {
-//         card.style.opacity=0;
-//     });
-    // let count=0;
-    // let card= document.querySelectorAll(".cardProject")
-    // card[count].style.opacity=0;
-    // count++;
-    // card[count].style.opacity=1;
-// }
