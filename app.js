@@ -54,19 +54,19 @@ var cursor = {
             self.$dot.style.left = self.endX + 'px';
         });
         
-        document.addEventListener('mouseenter', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        });
+        // document.addEventListener('mouseenter', function(e) {
+        //     self.cursorVisible = true;
+        //     self.toggleCursorVisibility();
+        //     self.$dot.style.opacity = 1;
+        //     self.$outline.style.opacity = 1;
+        // });
         
-        document.addEventListener('mouseleave', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        });
+        // document.addEventListener('mouseleave', function(e) {
+        //     self.cursorVisible = true;
+        //     self.toggleCursorVisibility();
+        //     self.$dot.style.opacity = 0;
+        //     self.$outline.style.opacity = 0;
+        // });
     },
     
     animateDotOutline: function() {
@@ -107,12 +107,12 @@ var cursor = {
 
 cursor.init();
 
-function modeChange(){
-    let slider = document.querySelector("#tickBox");
+function modeChange(n){
+    let slider = document.querySelectorAll("#tickBox");
     let bg= document.querySelector("body")
     let card= document.querySelectorAll(".card")
     
-    if (slider.checked) {
+    if (slider[n].checked) {
         document.querySelector(":root").style.setProperty('--primary', "#e1684d");
         document.querySelector(":root").style.setProperty('--mouse', "#4071f4");
         document.querySelector(":root").style.setProperty('--secondary', "#e1684d35");
