@@ -1333,7 +1333,7 @@ input:valid~i{
         flex-direction: column;
     }
     .title{
-        color: #000;
+        color: var(--text);
         width: 90%;
     }
     .flip-container{
