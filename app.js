@@ -122,13 +122,9 @@ function modeChange(n){
         });
     }
 }
-
-let certiCont= document.querySelectorAll(".flip-container")
-for (let index=3; index<certiCont.length; index++){
-    certiCont[index].style.display="none";
-}
-
+   
 function more(){
+    let certiCont= document.querySelectorAll(".flip-container")
     let button= document.querySelector(".button")
     if(certiCont[4].style.display=="none"){
         for (let index=3; index<certiCont.length; index++){
@@ -154,3 +150,4 @@ function toggleMenu() {
     const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('active');
 }
+

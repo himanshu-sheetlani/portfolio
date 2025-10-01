@@ -1,0 +1,235 @@
+{
+    "skills":[
+        {
+            "name": "HTML",
+            "img": "https://skillicons.dev/icons?i=html"
+        },
+        {
+            "name": "CSS",
+            "img": "https://skillicons.dev/icons?i=css"
+        },
+        {
+            "name": "JavaScript",
+            "img": "https://skillicons.dev/icons?i=js"
+        },
+        {
+            "name": "NodeJS",
+            "img": "https://skillicons.dev/icons?i=nodejs"
+        },
+        {
+            "name": "ExpressJS",
+            "img": "https://skillicons.dev/icons?i=express"
+        },
+        {
+            "name": "ReactJS",
+            "img": "https://skillicons.dev/icons?i=react"
+        },
+        {
+            "name": "MongoDB",
+            "img": "https://skillicons.dev/icons?i=mongo"
+        },
+        {
+            "name": "MySQL",
+            "img": "https://skillicons.dev/icons?i=mysql"
+        },
+        {
+            "name": "Git",
+            "img": "https://skillicons.dev/icons?i=git"
+        },
+        {
+            "name": "GitHub",
+            "img": "https://skillicons.dev/icons?i=github"
+        },
+        {
+            "name": "Python",
+            "img": "https://skillicons.dev/icons?i=python"
+        },
+        {
+            "name": "Java",
+            "img": "https://skillicons.dev/icons?i=java"
+        },
+        {
+            "name": "C",
+            "img": "https://skillicons.dev/icons?i=c"
+        },
+        {
+            "name": "C++",
+            "img": "https://skillicons.dev/icons?i=cpp"
+        },
+        {
+            "name": "Bootstrap",
+            "img": "https://skillicons.dev/icons?i=bootstrap"
+        },
+        {
+            "name": "Django",
+            "img": "https://skillicons.dev/icons?i=django"
+        },
+        {
+            "name": "Postman",
+            "img": "https://skillicons.dev/icons?i=postman"
+        },
+        {
+            "name": "Vercel",
+            "img": "https://skillicons.dev/icons?i=vercel"
+        },
+        {
+            "name": "VSCode",
+            "img": "https://skillicons.dev/icons?i=vscode"
+        },
+        {
+            "name": "CodePen",
+            "img": "https://skillicons.dev/icons?i=codepen"
+        },
+        {
+            "name": "Figma",
+            "img": "https://skillicons.dev/icons?i=figma"
+        },
+        {
+            "name": "Illustrator",
+            "img": "https://skillicons.dev/icons?i=illustrator"
+        },
+        {
+            "name": "InkScape",
+            "img": "https://img.icons8.com/?size=100&id=63150&format=png&color=000000"
+        },
+        {
+            "name": "Canva",
+            "img": "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000"
+        }
+    ],
+    "certificate":[
+        {
+            "image": "https://i.postimg.cc/k4ksHMMX/IICPC.png",
+            "title": "IICPC Summer Camp 2024",
+            "platform_logo": "https://iicpc.com/IICPC2.png",
+            "platform_name": "IICPC(Inter IIT Competitive Programming Conclave)",
+            "skill": "Competitive Programming",
+            "description": "I completed the IICPC(Inter IIT Competitive Programming Conclave) Summer Camp, a 2-month program that really pushed my coding skills to the next level.",
+            "issued_on": "01 SEPTEMBER 2024",
+            "URL": "https://drive.google.com/file/d/10RvA64t27AWc9tmxK_dB1FTNir9jmRQZ/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/G2BzzTCf/certi2.jpg",
+            "title": "Postman API Fundamentals Student Expert",
+            "platform_logo": "https://skillicons.dev/icons?i=postman",
+            "platform_name": "Postman",
+            "skill": "API",
+            "description": "I completed a course on Postman API Fundamentals, gaining expertise in advanced API techniques and skills.",
+            "issued_on": "13 JUNE 2024",
+            "URL": "https://api.badgr.io/public/assertions/2Yx33bkJQUW48NRhgehZbg"
+        },
+        {
+            "image": "https://i.postimg.cc/SNbV7KtR/certi3.jpg",
+            "title": "DECODE-A-THON",
+            "platform_logo": "https://media.licdn.com/dms/image/C560BAQFzgWksq2tUkw/company-logo_200_200/0/1647450647114?e=2147483647&v=beta&t=5zEb487N_CUhNCOBP94g6ix6iGT9CvWEC-N1fyn3VGk",
+            "platform_name": "IEEE, AITR",
+            "skill": "C/C++",
+            "description": "I participated in the Decode-a-thon, where my team tackled challenging problems on C and C++ programming languages.",
+            "issued_on": "22 MAY 2024",
+            "URL": "https://drive.google.com/file/d/1iDjkuoOhmZyArNOlhSPIInHPdioQhUV4/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/ZYBDx2bf/certi1.jpg",
+            "title": "The Joy of Computing using Python",
+            "platform_logo": "https://pbs.twimg.com/profile_images/1719241980247441408/8os9do3V_400x400.jpg",
+            "platform_name": "NPTEL",
+            "skill": "Python",
+            "description": "I completed a Python course taught by professors from IIT Ropar on an online platform called NPTEL, followed by an offline exam in which I scored 79%.",
+            "issued_on": "16 MAY 2024",
+            "URL": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS57S65760055930468854"
+        },
+        {
+            "image": "https://i.postimg.cc/zXw7d19Q/certi4.jpg",
+            "title": "HackWave- 36Hrs National Level Hackathon",
+            "platform_logo": "https://application.cdgi.edu.in/wp-content/uploads/2025/05/instituteIcon-1727433701622.png",
+            "platform_name": "CDGI, Indore",
+            "skill": "Web Development",
+            "description": "",
+            "issued_on": "27-29 APRIL 2024",
+            "URL": "https://drive.google.com/file/d/1AvoxOI5eju5Mb4Okat3b41vQofC0kkRM/view?usp=drive_link"
+        },
+        {
+            "image": "https://i.postimg.cc/nhHkgPxx/certi5.jpg",
+            "title": "Prayatna - 36Hrs National Level Hackathon",
+            "platform_logo": "https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/20200403122812.png?v=20200403122812",
+            "platform_name": "Acropolis Institute of Technology & Research",
+            "skill": "Web Development",
+            "description": "",
+            "issued_on": "18-20 MARCH 2024",
+            "URL": "https://drive.google.com/file/d/1yo8Uw3lMA090AZoxIZ8iDsW2ty1SuDJB/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/qMHQX7Z1/certi6.png",
+            "title": "NodeJS",
+            "platform_logo": "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/05/22114556/Scaler_Logo_Transparent.png",
+            "platform_name": "Scaler",
+            "skill": "NodeJS",
+            "description": "",
+            "issued_on": "02 MARCH 2024",
+            "URL": "https://drive.google.com/file/d/1Vc0EcG9inPz1NfvgeHqas3ORo8dz3_PN/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/Sxyr3v4x/certi8.jpg",
+            "title": "Introduction to OpenShift Applications (DO101)",
+            "platform_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcml3nEHHjOqhoZHkxUGOZxKbJwcBiEHfuA&s",
+            "platform_name": "RedHat",
+            "skill": "",
+            "description": "",
+            "issued_on": "06 JANUARY 2024",
+            "URL": "https://drive.google.com/file/d/1P_FzAeH7xRCKO4TogzurmJSBLoqg9KIo/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/7JP0SWgj/certi-7.png",
+            "title": "Delta (Full Stack Web Development Course)",
+            "platform_logo": "https://rebrand.ly/kkq1svj",
+            "platform_name": "Apna College",
+            "skill": "Full Stack Web Development (MERN Stack)",
+            "description": "",
+            "issued_on": "05 DECEMBER 2023",
+            "URL": "https://drive.google.com/file/d/1TpLlsy1tONFan2_PDIXxW0gtCiu1g7O4/view?usp=sharing"
+        },
+        {
+            "image": "https://i.postimg.cc/FH9Z8BvN/certi10.png",
+            "title": "HTML Course",
+            "platform_logo": "http://rebrand.ly/nougvky",
+            "platform_name": "Codeliber",
+            "skill": "HTML",
+            "description": "",
+            "issued_on": "05 OCTOBER 2023",
+            "URL": "https://drive.google.com/file/d/1rZ9_rLgfUmuhoUaN_QfFPEnxSVEoy0Z_/view?usp=sharing"
+        },
+        {
+            "image": "https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/3085395/original/Himanshu_Sheetlani20230807-70-1mcmeuu.jpg",
+            "title": "Java programming",
+            "platform_logo": "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg",
+            "platform_name": "Great Learning",
+            "skill": "Java",
+            "description": "",
+            "issued_on": "AUGUST 2023",
+            "URL": "https://rebrand.ly/814j1td"
+        }
+    ],
+    "project":[
+        {
+            "img":"https://i.postimg.cc/sX1H80pZ/Portfolio.png",
+            "title":"Portfolio Website",
+            "description":"My Portfolio Website",
+            "live":"https://himanshu-sheetlani.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/portfolio"
+        },
+        {
+            "img":"https://i.postimg.cc/xjJF3hfg/quick-Read.png",
+            "title":"QuickRead News",
+            "description":"A News Website",
+            "live":"https://quickreadnews.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/QuickRead"
+        },
+        {
+            "img":"https://i.postimg.cc/yd5pzXPn/att-calc.png",
+            "title":"Attendance Calculator",
+            "description":"Academic website",
+            "live":"https://attendance-calculator-aitr.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/attendance-calc"
+        }
+    ]
+}
