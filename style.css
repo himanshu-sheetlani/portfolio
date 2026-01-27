@@ -298,9 +298,9 @@ input:checked+.slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: side 5s linear;
+    /* animation: side 5s linear;
     animation-timeline: view(0%);
-    animation-range: entry 0 cover 30%;
+    animation-range: entry 0 cover 30%; */
 }
 
 .hbottom {
@@ -947,9 +947,9 @@ input:checked+.slider:before {
     flex-direction: column;
     align-items: center;
     z-index: 3;
-    animation: appear 10s linear;
+    /* animation: appear 10s linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 50%;
+    animation-range: entry 0 cover 50%; */
 }
 
 .formBox img {
@@ -1069,10 +1069,10 @@ input:valid~i {
     justify-content: center;
     align-items: center;
     transform: perspective(800px) translateY(0px) translateY(0px) rotateX(0deg) translateZ(0px);
-    animation: moveUp linear forwards;
+    /* animation: moveUp linear forwards;
     animation-timeline: view();
     animation-range: contain 300px;
-    animation-range-end: contain 60vh;
+    animation-range-end: contain 60vh; */
 }
 
 .projectCard,
@@ -1089,12 +1089,12 @@ input:valid~i {
 .projectCard {
     margin: 100px 0 0 0;
     border-radius: 25px 25px 0 0;
-    transform: perspective(800px) translateY(0px) translateY(0px) rotateX(70deg) translateZ(0px);
+    /* transform: perspective(800px) translateY(0px) translateY(0px) rotateX(70deg) translateZ(0px); */
     box-shadow: 0.2s;
-    animation: moveDown linear forwards;
+    /* animation: moveDown linear forwards;
     animation-timeline: view();
     animation-range-start: contain -1000px;
-    animation-range-end: contain 20vh;
+    animation-range-end: contain 20vh; */
     z-index: 1;
 }
 
@@ -1112,11 +1112,11 @@ input:valid~i {
     height: 60vh;
 }
 
-.projectCardDublicate .cardProject {
+/* .projectCardDublicate .cardProject {
     animation: moveSide linear forwards;
     animation-timeline: view(0%);
     animation-range: entry 0 cover 50%;
-}
+} */
 
 
 .cardProject img {
@@ -1631,11 +1631,11 @@ input:valid~i {
         background-color: var(--whitebg);
         backdrop-filter: blur(15px);
         position: absolute;
-        top: 75px; 
+        top: 75px;
         left: 0;
         text-align: center;
         padding-bottom: 20px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         border-bottom: 1px solid var(--primary);
     }
 
@@ -1649,6 +1649,7 @@ input:valid~i {
             opacity: 0;
             transform: translateY(-20px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
