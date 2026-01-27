@@ -1,4 +1,5 @@
 {
+    "resume_link": "https://drive.google.com/file/d/1-3f6Yk9b1j1v1Yk2KX1ZlYt4oF6X9z4H/view?usp=sharing",
     "skills":[
         {
             "name": "HTML",
@@ -99,7 +100,117 @@
     ],
     "certificate":[
         {
-            "image": "https://i.postimg.cc/k4ksHMMX/IICPC.png",
+            "image": "./assets/images/certi18.webp",
+            "title": "Cloud Foundations",
+            "platform_logo": "https://skillicons.dev/icons?i=aws",
+            "platform_name": "AWS",
+            "skill": "AWS",
+            "description": "I completed the Cloud Foundations course offered by AWS, gaining foundational knowledge and skills in cloud computing and AWS services.",
+            "issued_on": "13 DECEMBER 2025",
+            "URL": "https://www.credly.com/go/95p6uVOg"
+        },
+        {
+            "image": "./assets/images/certi14.webp",
+            "title": "Database Management System",
+            "platform_logo": "https://pbs.twimg.com/profile_images/1719241980247441408/8os9do3V_400x400.jpg",
+            "platform_name": "NPTEL",
+            "skill": "DBMS",
+            "description": "I completed the Database Management System course taught by professors from IIT Kharagpur on an online platform called NPTEL, followed by an offline exam in which I scored 60%.",
+            "issued_on": "1 OCTOBER 2025",
+            "URL": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS145S63720089509168015"
+        },
+        {
+            "image": "./assets/images/certi17.webp",
+            "title": "Research Paper Presented - NSSAFE 2025",
+            "platform_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeTiKa06JfiIKthx67G00-FYpbnWKIYD-N5A&s",
+            "platform_name": "AITR",
+            "skill": "Research",
+            "description": "I presented a research paper titled 'HydroWatch: IoT Based Water Quality Monitoring System' at the National Seminar on Safety and Future Engineering (NSSAFE) 2025 organized by AITR.",
+            "issued_on": "8 NOVEMBER 2025",
+            "URL": "https://drive.google.com/file/d/1g124sQ3HMo5ncZ2fGYvykpaWa6g5Wp0c/view?usp=drive_link"
+        },
+        {
+            "image": "./assets/images/certi16.webp",
+            "title": "nRF Connect SDK Fundamentals",
+            "platform_logo": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Nordic_Semiconductor_Company_Logo.svg",
+            "platform_name": "Nordic Semiconductor",
+            "skill": "nRF Microcontrollers",
+            "description": "I completed the nRF Connect SDK Fundamentals course offered by Nordic Semiconductor, gaining foundational knowledge and skills in using the nRF Connect SDK for developing Bluetooth Low Energy applications.",
+            "issued_on": "26 OCTOBER 2025",
+            "URL": "https://academy.nordicsemi.com/check-certificate/7019A867D1D06C2-7019A8676F9AB35-11EFA0108CB9DF_32/"
+        },
+        {
+            "image": "./assets/images/certi15.webp",
+            "title": "Generative AI Leader",
+            "platform_logo": "https://skillicons.dev/icons?i=gcp",
+            "platform_name": "Google Cloud ",
+            "skill": "Gen AI",
+            "description": "I completed the Generative AI Leader course offered by Google Cloud, gaining advanced knowledge and skills in generative AI technologies and their applications.",
+            "issued_on": "17 AUGUST 2025",
+            "URL": "https://drive.google.com/file/d/1XGgRJy6whoEhj80Rxoljo6_uiTkIIypR/view?usp=drive_link"
+        },
+        {
+            "image": "./assets/images/certi13.webp",
+            "title": "Fundamentals in Cybersecurity",
+            "platform_logo": "https://www.fortinet.com/content/dam/fortinet/images/general/fortinet-logo.svg",
+            "platform_name": "Fortinet",
+            "skill": "Cybersecurity",
+            "description": "I completed the Fundamentals in Cybersecurity course offered by Fortinet, gaining essential knowledge and skills in cybersecurity principles and practices.",
+            "issued_on": "21 JUNE 2025",
+            "URL": "https://training.fortinet.com/admin/tool/certificate/index.php?code=8962942354HS"
+        },
+        {
+            "image": "./assets/images/certi12.webp",
+            "title": "Object Oriented Programming",
+            "platform_logo": "https://pbs.twimg.com/profile_images/1719241980247441408/8os9do3V_400x400.jpg",
+            "platform_name": "NPTEL",
+            "skill": "OOP",
+            "description": "I completed the Object Oriented Programming course taught by professors from IIT Roorkee on an online platform called NPTEL, followed by an offline exam in which I scored 82%.",
+            "issued_on": "24 MAY 2025",
+            "URL": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS34S64720040704308281"
+        },
+        {
+            "image": "./assets/images/certi11.webp",
+            "title": "Programming in Java",
+            "platform_logo": "https://pbs.twimg.com/profile_images/1719241980247441408/8os9do3V_400x400.jpg",
+            "platform_name": "NPTEL",
+            "skill": "Java",
+            "description": "I completed the Programming in Java course taught by professors from IIT Kharagpur on an online platform called NPTEL, followed by an offline exam in which I scored 61%.",
+            "issued_on": "24 MAY 2025",
+            "URL": "https://nptel.ac.in/noc/E_Certificate/NPTEL25CS57S124720056704308281"
+        },
+        {
+            "image": "./assets/images/certi5.webp",
+            "title": "Gen AI Study Jam",
+            "platform_logo": "https://ugc.production.linktr.ee/N8N0E9rcSZqrG02t7eh1_IPAyH3X1mog2P0gR",
+            "platform_name": "GDG - AITR",
+            "skill": "Gen AI",
+            "description": "I completed the Gen AI Study Jam organized by GDG AITR, where I learned about the fundamentals and applications of Generative AI technologies.",
+            "issued_on": "15 FEBRUARY 2025",
+            "URL": "https://www.cloudskillsboost.google/public_profiles/4960efc2-5a5b-4abd-9a3c-bc4c7cf948c1"
+        },
+        {
+            "image": "./assets/images/certi4.webp",
+            "title": "Junior Cybersecurity Analyst",
+            "platform_logo": "https://www.vectorlogo.zone/logos/cisco/cisco-ar21~bgwhite.svg",
+            "platform_name": "Cisco",
+            "skill": "Cybersecurity",
+            "description": "I completed the Cisco Junior Cybersecurity Analyst course, gaining foundational knowledge and skills in cybersecurity principles and practices.",
+            "issued_on": "31 JANUARY 2025",
+            "URL": "https://www.credly.com/badges/aff1a3f6-4fc3-4121-9227-6f050d4a72ed"
+        },
+        {
+            "image": "./assets/images/certi3.webp",
+            "title": "Open Source Contibuter - GSSOC'24 (AIR 335)",
+            "platform_logo": "https://avatars.githubusercontent.com/u/166525102",
+            "platform_name": "GSSOC",
+            "skill": "Open Source Contribution",
+            "description": "I successfully contributed to open source projects during the GSSOC'24 event with All India Rank 335, enhancing my skills in collaboration and coding.",
+            "issued_on": "11 NOVEMBER 2024",
+            "URL": "https://gssoc.girlscript.tech/certificates/verify/GSSOC_EXT_2801BC3E"
+        },
+        {
+            "image": "./assets/images/certi9.webp",
             "title": "IICPC Summer Camp 2024",
             "platform_logo": "https://iicpc.com/IICPC2.png",
             "platform_name": "IICPC(Inter IIT Competitive Programming Conclave)",
@@ -109,7 +220,7 @@
             "URL": "https://drive.google.com/file/d/10RvA64t27AWc9tmxK_dB1FTNir9jmRQZ/view?usp=sharing"
         },
         {
-            "image": "https://i.postimg.cc/G2BzzTCf/certi2.jpg",
+            "image": "./assets/images/certi2.webp",
             "title": "Postman API Fundamentals Student Expert",
             "platform_logo": "https://skillicons.dev/icons?i=postman",
             "platform_name": "Postman",
@@ -119,17 +230,7 @@
             "URL": "https://api.badgr.io/public/assertions/2Yx33bkJQUW48NRhgehZbg"
         },
         {
-            "image": "https://i.postimg.cc/SNbV7KtR/certi3.jpg",
-            "title": "DECODE-A-THON",
-            "platform_logo": "https://media.licdn.com/dms/image/C560BAQFzgWksq2tUkw/company-logo_200_200/0/1647450647114?e=2147483647&v=beta&t=5zEb487N_CUhNCOBP94g6ix6iGT9CvWEC-N1fyn3VGk",
-            "platform_name": "IEEE, AITR",
-            "skill": "C/C++",
-            "description": "I participated in the Decode-a-thon, where my team tackled challenging problems on C and C++ programming languages.",
-            "issued_on": "22 MAY 2024",
-            "URL": "https://drive.google.com/file/d/1iDjkuoOhmZyArNOlhSPIInHPdioQhUV4/view?usp=sharing"
-        },
-        {
-            "image": "https://i.postimg.cc/ZYBDx2bf/certi1.jpg",
+            "image": "./assets/images/certi1.webp",
             "title": "The Joy of Computing using Python",
             "platform_logo": "https://pbs.twimg.com/profile_images/1719241980247441408/8os9do3V_400x400.jpg",
             "platform_name": "NPTEL",
@@ -139,67 +240,37 @@
             "URL": "https://nptel.ac.in/noc/E_Certificate/NPTEL24CS57S65760055930468854"
         },
         {
-            "image": "https://i.postimg.cc/zXw7d19Q/certi4.jpg",
-            "title": "HackWave- 36Hrs National Level Hackathon",
-            "platform_logo": "https://application.cdgi.edu.in/wp-content/uploads/2025/05/instituteIcon-1727433701622.png",
-            "platform_name": "CDGI, Indore",
-            "skill": "Web Development",
-            "description": "",
-            "issued_on": "27-29 APRIL 2024",
-            "URL": "https://drive.google.com/file/d/1AvoxOI5eju5Mb4Okat3b41vQofC0kkRM/view?usp=drive_link"
-        },
-        {
-            "image": "https://i.postimg.cc/nhHkgPxx/certi5.jpg",
-            "title": "Prayatna - 36Hrs National Level Hackathon",
-            "platform_logo": "https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/20200403122812.png?v=20200403122812",
-            "platform_name": "Acropolis Institute of Technology & Research",
-            "skill": "Web Development",
-            "description": "",
-            "issued_on": "18-20 MARCH 2024",
-            "URL": "https://drive.google.com/file/d/1yo8Uw3lMA090AZoxIZ8iDsW2ty1SuDJB/view?usp=sharing"
-        },
-        {
-            "image": "https://i.postimg.cc/qMHQX7Z1/certi6.png",
+            "image": "./assets/images/certi6.webp",
             "title": "NodeJS",
             "platform_logo": "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/05/22114556/Scaler_Logo_Transparent.png",
             "platform_name": "Scaler",
             "skill": "NodeJS",
-            "description": "",
+            "description": "I completed a comprehensive NodeJS course on Scaler, gaining in-depth knowledge and practical skills in server-side JavaScript development.",
             "issued_on": "02 MARCH 2024",
             "URL": "https://drive.google.com/file/d/1Vc0EcG9inPz1NfvgeHqas3ORo8dz3_PN/view?usp=sharing"
         },
         {
-            "image": "https://i.postimg.cc/Sxyr3v4x/certi8.jpg",
+            "image": "./assets/images/certi8.webp",
             "title": "Introduction to OpenShift Applications (DO101)",
             "platform_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcml3nEHHjOqhoZHkxUGOZxKbJwcBiEHfuA&s",
             "platform_name": "RedHat",
-            "skill": "",
-            "description": "",
+            "skill": "OpenShift",
+            "description": "I completed the Introduction to OpenShift Applications (DO101) course by RedHat, gaining foundational knowledge in container orchestration and application deployment.",
             "issued_on": "06 JANUARY 2024",
             "URL": "https://drive.google.com/file/d/1P_FzAeH7xRCKO4TogzurmJSBLoqg9KIo/view?usp=sharing"
         },
         {
-            "image": "https://i.postimg.cc/7JP0SWgj/certi-7.png",
+            "image": "./assets/images/certi7.webp",
             "title": "Delta (Full Stack Web Development Course)",
             "platform_logo": "https://rebrand.ly/kkq1svj",
             "platform_name": "Apna College",
             "skill": "Full Stack Web Development (MERN Stack)",
-            "description": "",
+            "description": "I completed the Delta Full Stack Web Development Course by Apna College, gaining comprehensive skills in building web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
             "issued_on": "05 DECEMBER 2023",
             "URL": "https://drive.google.com/file/d/1TpLlsy1tONFan2_PDIXxW0gtCiu1g7O4/view?usp=sharing"
         },
         {
-            "image": "https://i.postimg.cc/FH9Z8BvN/certi10.png",
-            "title": "HTML Course",
-            "platform_logo": "http://rebrand.ly/nougvky",
-            "platform_name": "Codeliber",
-            "skill": "HTML",
-            "description": "",
-            "issued_on": "05 OCTOBER 2023",
-            "URL": "https://drive.google.com/file/d/1rZ9_rLgfUmuhoUaN_QfFPEnxSVEoy0Z_/view?usp=sharing"
-        },
-        {
-            "image": "https://d9jmtjs5r4cgq.cloudfront.net/ComplementaryCourseCertificate/3085395/original/Himanshu_Sheetlani20230807-70-1mcmeuu.jpg",
+            "image": "./assets/images/certi10.webp",
             "title": "Java programming",
             "platform_logo": "https://mma.prnewswire.com/media/1458111/Great_Learning_Logo.jpg",
             "platform_name": "Great Learning",
@@ -207,6 +278,38 @@
             "description": "",
             "issued_on": "AUGUST 2023",
             "URL": "https://rebrand.ly/814j1td"
+        }
+    ],
+    "hackathon": [
+        {
+            "image": "./assets/images/versionbeta.webp",
+            "title": "Version Beta 8.0",
+            "platform_logo": "https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png",
+            "platform_name": "MANIT, Bhopal",
+            "tag": "Winner",
+            "description": "Secured 1st position at Version Beta 8.0 hackathon held at MANIT, Bhopal.",
+            "issued_on": "31 Oct - 2 Nov 2025",
+            "URL": "#"
+        },
+        {
+            "image": "./assets/images/mediverse.webp",
+            "title": "MediVerse",
+            "platform_logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVAoOMJ0Y8dJF_2DbetniQR3MHsKtgj_uy-g&s",
+            "platform_name": "Medicaps University, Indore",
+            "tag": "Winner",
+            "description": "Winner of the MediVerse hackathon organized by Medicaps University.",
+            "issued_on": "25 Nov 2025",
+            "URL": "#"
+        },
+        {
+            "image": "https://unbredbombers.ca/wp-content/uploads/2018/05/no-image-1.jpg",
+            "title": "Neural Nexus 2.0",
+            "platform_logo": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Vijaybhoomi_University_Logo.png",
+            "platform_name": "Vijaybhoomi University, Karjat",
+            "tag": "Winner",
+            "description": "Won the Neural Nexus 2.0 hackathon at Vijaybhoomi University.",
+            "issued_on": "14 Dec 2025",
+            "URL": "#"
         }
     ],
     "project":[

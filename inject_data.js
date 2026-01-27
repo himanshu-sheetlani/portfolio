@@ -3,6 +3,8 @@ import data from './data.json' with {type:'json'};
 let cert_list=''
 let skills=''
 
+//certificates
+
 for (let i=0; i<data.certificate.length; i++){
     cert_list=cert_list+
         `<div class="flip-container">
@@ -25,11 +27,31 @@ for (let i=0; i<data.certificate.length; i++){
 }
 certificates.innerHTML=cert_list
 
-let certiCont= document.querySelectorAll(".flip-container")
+let certiCont= document.querySelectorAll("#certificates .flip-container")
 for (let index=3; index<certiCont.length; index++){
     certiCont[index].style.display="none";
 }
 
+//hackathons
+let hackathon_list=''
+if (data.hackathon) {
+    for (let i=0; i<data.hackathon.length; i++){
+        hackathon_list +=
+            `<div class="hackathon-card">
+                <img class="main-img" src="${data.hackathon[i].image}">
+                <div class="card-header">
+                    <h2>${data.hackathon[i].title}</h2>
+                    ${data.hackathon[i].tag ? `<div class="winner-tag">🏆 ${data.hackathon[i].tag}</div>` : ''}
+                </div>
+                <div class="platform"><img src="${data.hackathon[i].platform_logo}"> <h3>${data.hackathon[i].platform_name}</h3></div>
+                <p>${data.hackathon[i].description}</p>
+                <div class="issued-on">Date: ${data.hackathon[i].issued_on}</div>
+            </div>`
+    }
+    document.querySelector('#hackathon-list').innerHTML=hackathon_list
+}
+
+//skills
 for (let i=0; i<data.skills.length; i++){
     skills=skills+
     `<div class="clearfix">    
@@ -38,6 +60,8 @@ for (let i=0; i<data.skills.length; i++){
 }
 
 document.querySelector('#techStack ul').innerHTML=skills
+
+//projects
 let project=
     `<div class="cardProject">
         <div class="img">
@@ -47,8 +71,8 @@ let project=
             <h2>${data.project[0].title}</h2>
             <p>${data.project[0].description}</p>
             <div class="links">
-                <a class="resume" href="${data.project[0].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
-                <a class="resume" href="${data.project[0].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                <a class="blue-button" href="${data.project[0].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                <a class="blue-button" href="${data.project[0].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>
@@ -64,12 +88,18 @@ for (let i=1; i<data.project.length; i++){
             <h2>${data.project[i].title}</h2>
             <p>${data.project[i].description}</p>
             <div class="links">
-                <a class="resume" href="${data.project[i].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
-                <a class="resume" href="${data.project[i].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                <a class="blue-button" href="${data.project[i].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
+                <a class="blue-button" href="${data.project[i].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>`
 }
 project=project+'</div>'
+document.querySelector('.projectCard').innerHTML=project;
 
-document.querySelector('.projectCard').innerHTML=project
+//resume link
+document.querySelectorAll(".resume").forEach(el => {
+  el.href = data.resume_link;
+});
+
+console.log(document.querySelectorAll(".resume"), data.resume_link);
