@@ -10,9 +10,9 @@ for (let i=0; i<data.certificate.length; i++){
         `<div class="flip-container">
             <div class="flip-inner-container">
                 <div class="flip-front">
-                    <img src="${data.certificate[i].image}">
+                    <img src="${data.certificate[i].image}" alt="${data.certificate[i].title}">
                     <h6>${data.certificate[i].title}</h6>
-                    <div class="platform"><img src="${data.certificate[i].platform_logo}"> <h3>${data.certificate[i].platform_name}</h3></div>
+                    <div class="platform"><img src="${data.certificate[i].platform_logo}" alt="${data.certificate[i].platform_name}"> <h3>${data.certificate[i].platform_name}</h3></div>
                 </div>
                 <div class="flip-back">
                     <h2>Skills: <br> ${data.certificate[i].skill}</h2>
@@ -38,12 +38,12 @@ if (data.hackathon) {
     for (let i=0; i<data.hackathon.length; i++){
         hackathon_list +=
             `<div class="hackathon-card">
-                <img class="main-img" src="${data.hackathon[i].image}">
+                <img class="main-img" src="${data.hackathon[i].image}" alt="${data.hackathon[i].title}">
                 <div class="card-header">
                     <h2>${data.hackathon[i].title}</h2>
                     ${data.hackathon[i].tag ? `<div class="winner-tag">🏆 ${data.hackathon[i].tag}</div>` : ''}
                 </div>
-                <div class="platform"><img src="${data.hackathon[i].platform_logo}"> <h3>${data.hackathon[i].platform_name}</h3></div>
+                <div class="platform"><img src="${data.hackathon[i].platform_logo}" alt="${data.hackathon[i].platform_name}"> <h3>${data.hackathon[i].platform_name}</h3></div>
                 <p>${data.hackathon[i].description}</p>
                 <div class="issued-on">Date: ${data.hackathon[i].issued_on}</div>
             </div>`
@@ -65,7 +65,7 @@ document.querySelector('#techStack ul').innerHTML=skills
 let project=
     `<div class="cardProject">
         <div class="img">
-            <img src="${data.project[0].img}" alt="">
+            <img src="${data.project[0].img}" alt="${data.project[0].title}">
         </div>
         <div class="details">
             <h2>${data.project[0].title}</h2>
@@ -82,7 +82,7 @@ for (let i=1; i<data.project.length; i++){
     project=project+
     `<div class="cardProject">
         <div class="img">
-            <img src="${data.project[i].img}" alt="">
+            <img src="${data.project[i].img}" alt="${data.project[i].title}">
         </div>
         <div class="details">
             <h2>${data.project[i].title}</h2>

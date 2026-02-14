@@ -1,0 +1,18 @@
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (just in case)
+node_modules/
+dist/
+.env
+
+# Editor directories
+.vscode/
+.idea/
