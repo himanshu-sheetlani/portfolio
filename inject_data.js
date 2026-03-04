@@ -62,6 +62,7 @@ for (let i=0; i<data.skills.length; i++){
 document.querySelector('#techStack ul').innerHTML=skills
 
 //projects
+console.log(data.project)
 let project=
     `<div class="cardProject">
         <div class="img">
@@ -73,6 +74,7 @@ let project=
             <div class="links">
                 <a class="blue-button" href="${data.project[0].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
                 <a class="blue-button" href="${data.project[0].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                ${data.project[0].extra}
             </div>
         </div>
     </div>
@@ -90,6 +92,7 @@ for (let i=1; i<data.project.length; i++){
             <div class="links">
                 <a class="blue-button" href="${data.project[i].live}" target="_blank">View Live&nbsp;<i class="fa-solid fa-up-right-from-square"></i></a>
                 <a class="blue-button" href="${data.project[i].github}" target="_blank">View Code &nbsp; <i class="fa-brands fa-github"></i></a>
+                ${data.project[i].extra}
             </div>
         </div>
     </div>`

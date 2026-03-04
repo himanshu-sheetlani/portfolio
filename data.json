@@ -314,25 +314,36 @@
     ],
     "project":[
         {
-            "img":"https://i.postimg.cc/sX1H80pZ/Portfolio.png",
-            "title":"Portfolio Website",
-            "description":"My Portfolio Website",
-            "live":"https://himanshu-sheetlani.vercel.app/",
-            "github":"https://github.com/himanshu-sheetlani/portfolio"
+            "img":"./assets/images/jetend.webp",
+            "title":"Jetend",
+            "description":"<b>A JavaScript library </b> for Node.js that simplifies Express.js backend development by providing modular, one-liner utilities for routing, authentication, validation, database operations, and response handling. Designed to reduce boilerplate and help developers build scalable APIs faster with a clean, configurable architecture.",
+            "live":"https://jetend.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/jetend",
+            "extra": "<a class='blue-button' href='https://www.npmjs.com/package/jetend' target='_blank'>View on NPM&nbsp;<i class='fa-brands fa-npm'></i></a>"
         },
         {
-            "img":"https://i.postimg.cc/xjJF3hfg/quick-Read.png",
-            "title":"QuickRead News",
-            "description":"A News Website",
-            "live":"https://quickreadnews.vercel.app/",
-            "github":"https://github.com/himanshu-sheetlani/QuickRead"
+            "img":"./assets/images/hydroWatch.webp",
+            "title":"HydroWatch",
+            "description":"<b>An IoT-based monitoring platform </b> that collects real-time water quality data (pH, TDS, turbidity, and temperature) from ESP sensors and visualizes it through a web dashboard using Firebase and interactive charts, enabling continuous monitoring and analysis of water conditions.",
+            "live":"https://hydrowatch.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/hydroWatch",
+            "extra": "<a class='blue-button' href='https://ijaitr.in/files/V3I1/21.pdf' target='_blank'>Research Paper&nbsp;<i class='fa-brands fa-google-scholar'></i></a>"
         },
         {
             "img":"https://i.postimg.cc/yd5pzXPn/att-calc.png",
             "title":"Attendance Calculator",
             "description":"Academic website",
             "live":"https://attendance-calculator-aitr.vercel.app/",
-            "github":"https://github.com/himanshu-sheetlani/attendance-calc"
+            "github":"https://github.com/himanshu-sheetlani/attendance-calc",
+            "extra":""
+        },
+        {
+            "img":"https://i.postimg.cc/xjJF3hfg/quick-Read.png",
+            "title":"QuickRead News",
+            "description":"A News Website",
+            "live":"https://quickreadnews.vercel.app/",
+            "github":"https://github.com/himanshu-sheetlani/QuickRead",
+            "extra":""
         }
     ]
 }

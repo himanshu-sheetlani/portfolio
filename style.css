@@ -1101,7 +1101,7 @@ input:valid~i {
 .projectCardDublicate {
     border-radius: 0 0 25px 25px;
     margin: 0 0 100px 0;
-    z-index: 20;
+    z-index: 2;
 }
 
 .cardProject {
@@ -1154,7 +1154,7 @@ input:valid~i {
 
 .details p {
     font-size: 20px;
-    font-weight: bold;
+    text-align: justify;
     margin: 5px;
     color: var(--text);
 }
